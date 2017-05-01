@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64FED0F61EB7E91600BC8DA2 /* RNImageToBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E73848EC1D91319000276525 /* RNImageToBase64.m */; };
 		E73848ED1D91319000276525 /* RNImageToBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E73848EC1D91319000276525 /* RNImageToBase64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		64FED0EB1EB7E90200BC8DA2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E7E77AF01D911ED5004B91C7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -23,12 +33,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		64FED0ED1EB7E90200BC8DA2 /* libRNImageToBase64.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNImageToBase64.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E73848EB1D91319000276525 /* RNImageToBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNImageToBase64.h; sourceTree = "<group>"; };
 		E73848EC1D91319000276525 /* RNImageToBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNImageToBase64.m; sourceTree = "<group>"; };
 		E7E77AF21D911ED5004B91C7 /* libRNImageToBase64.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNImageToBase64.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		64FED0EA1EB7E90200BC8DA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E7E77AEF1D911ED5004B91C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				E7E77AF21D911ED5004B91C7 /* libRNImageToBase64.a */,
+				64FED0ED1EB7E90200BC8DA2 /* libRNImageToBase64.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +78,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		64FED0EC1EB7E90200BC8DA2 /* RNImageToBase64-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64FED0F51EB7E90200BC8DA2 /* Build configuration list for PBXNativeTarget "RNImageToBase64-tvOS" */;
+			buildPhases = (
+				64FED0E91EB7E90200BC8DA2 /* Sources */,
+				64FED0EA1EB7E90200BC8DA2 /* Frameworks */,
+				64FED0EB1EB7E90200BC8DA2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RNImageToBase64-tvOS";
+			productName = "RNImageToBase64-tvOS";
+			productReference = 64FED0ED1EB7E90200BC8DA2 /* libRNImageToBase64.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		E7E77AF11D911ED5004B91C7 /* RNImageToBase64 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7E77AFB1D911ED5004B91C7 /* Build configuration list for PBXNativeTarget "RNImageToBase64" */;
@@ -85,6 +121,10 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = xfumihiro;
 				TargetAttributes = {
+					64FED0EC1EB7E90200BC8DA2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
 					E7E77AF11D911ED5004B91C7 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -103,11 +143,20 @@
 			projectRoot = "";
 			targets = (
 				E7E77AF11D911ED5004B91C7 /* RNImageToBase64 */,
+				64FED0EC1EB7E90200BC8DA2 /* RNImageToBase64-tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		64FED0E91EB7E90200BC8DA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64FED0F61EB7E91600BC8DA2 /* RNImageToBase64.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E7E77AEE1D911ED5004B91C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -119,6 +168,36 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		64FED0F31EB7E90200BC8DA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = RNImageToBase64;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		64FED0F41EB7E90200BC8DA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = RNImageToBase64;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
 		E7E77AF91D911ED5004B91C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -224,6 +303,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		64FED0F51EB7E90200BC8DA2 /* Build configuration list for PBXNativeTarget "RNImageToBase64-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64FED0F31EB7E90200BC8DA2 /* Debug */,
+				64FED0F41EB7E90200BC8DA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E7E77AED1D911ED5004B91C7 /* Build configuration list for PBXProject "RNImageToBase64" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
